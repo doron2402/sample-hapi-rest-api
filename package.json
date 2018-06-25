@@ -6,7 +6,9 @@
   "scripts": {
     "start": "grunt",
     "test": "make test-unit",
-    "coverage": "make test-cov"
+    "coverage": "make test-cov",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,14 +21,15 @@
   },
   "homepage": "https://github.com/agendor/sample-hapi-rest-api",
   "dependencies": {
-    "hapi": "~3.0.0",
+    "hapi": "~13.0.0",
     "mysql": "~2.1.0",
-    "hapi-auth-basic": "~1.0.0",
+    "hapi-auth-basic": "~4.2.0",
     "joi": "~2.8.0",
     "hoek": "~1.5.1",
     "underscore": "~1.6.0",
     "db-migrate": "https://github.com/tuliomonteazul/node-db-migrate/tarball/master",
-    "q": "~1.0.1"
+    "q": "~1.0.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
@@ -55,5 +58,6 @@
     "travis-cov": {
       "threshold": 10
     }
-  }
+  },
+  "snyk": true
 }
