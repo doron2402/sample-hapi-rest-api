@@ -24,7 +24,7 @@
     "hapi-auth-basic": "~1.0.0",
     "joi": "~2.8.0",
     "hoek": "~1.5.1",
-    "underscore": "~1.6.0",
+    "underscore": "~1.12.1",
     "db-migrate": "https://github.com/tuliomonteazul/node-db-migrate/tarball/master",
     "q": "~1.0.1"
   },
